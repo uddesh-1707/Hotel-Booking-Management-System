@@ -1,16 +1,36 @@
-# React + Vite
+# Hotel Booking Frontend (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React frontend for the hotel booking system.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React
+- Vite
+- Axios
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Search available rooms by check-in/check-out dates
+- Book a room (uses user id `1` for demo)
+- View bookings for user `1`
+- Cancel booking
 
-## Expanding the ESLint configuration
+## Run
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```powershell
+npm install
+npm run dev
+```
+
+Frontend runs on `http://localhost:5173`.
+
+## Build
+
+```powershell
+npm run build
+```
+
+## Backend Requirement
+
+Backend should be running on `http://localhost:8080`.
+Vite proxy is configured for `/rooms` and `/bookings` in `vite.config.js`.
