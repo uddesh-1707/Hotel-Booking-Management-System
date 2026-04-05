@@ -1,0 +1,87 @@
+.page-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px 40px;
+  text-align: left;
+}
+
+.top-nav {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0 0;
+}
+
+.top-nav button {
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.top-nav button.active {
+  font-weight: 600;
+}
+
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-end;
+  margin-bottom: 24px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field-group input {
+  padding: 8px 10px;
+  min-width: 200px;
+}
+
+.search-form button {
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.error-message {
+  color: #c62828;
+  margin: 8px 0 16px;
+}
+
+.empty-state {
+  margin-top: 8px;
+}
+
+.rooms-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+.bookings-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+.rooms-table th,
+.rooms-table td,
+.bookings-table th,
+.bookings-table td {
+  border: 1px solid #d0d0d0;
+  padding: 10px;
+  text-align: left;
+}
+
+.rooms-table th,
+.bookings-table th {
+  background-color: #f4f4f4;
+}
+
+.rooms-table button,
+.bookings-table button {
+  padding: 6px 10px;
+  cursor: pointer;
+}
